@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff4d4d;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a:hover {
+            color: #ff4d4d;
+            transition: color 0.3s ease;
+        }
+
+        /* Seções */
+        section {
+            padding: 120px 20px 80px;
+            height: 550px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        section h1{
+            text-align: center;
+        }
+
+        section .text-container {
+            max-width: 50%;
+        }
+
+        /* Layout invertido para a imagem do lado direito */
+        .text-right-img-left {
+            flex-direction: row-reverse;
+        }
+
+        /* Títulos e parágrafos */
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #ff4d4d;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.5rem;
+            color: #dcdcdc;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: rgba(128, 128, 128, 0.418);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 30px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        footer .social-icons {
+            margin-bottom: 20px;
+        }
+
+        footer .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+            color: #ff4d4d;
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #fff;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #feffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #Inicio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px; /* Limita a largura para melhor visualização */
+    margin: 0 auto;
+}
+
+#Inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; /* Diminui a margem inferior */
+}
+
+#Inicio p {
+    font-size: 1.2rem;
+    line-height: 1.4; /* Reduz o espaçamento entre as linhas */
+    margin-bottom: 10px; /* Reduz o espaçamento entre parágrafos */
+}
+
+#Inicio img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+
+        /* Estilo para responsividade */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section img {
+                max-width: 90%;
+                margin: 20px 0;
+            }
+
+            section .text-container {
+                max-width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#Inicio">GameZone</a></li>
+            <li><a href="#Institucional">Institucional</a></li>
+            <li><a href="#ÁreasdeAtuação">Áreas de Atuação</a></li>
+            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#TrabalheConosco">Trabalhe Conosco</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="Inicio">
+    <div>
+        <h1>Bem-Vindo ao Mundo dos Jogos!</h1>
+        <p>Descubra uma nova dimensão de entretenimento com nossa vasta seleção de jogos para todas as idades. Desde os mais emocionantes jogos de ação até quebra-cabeças desafiadores, temos algo para todos os gostos. Junte-se a nós e mergulhe em uma experiência de jogo única e envolvente.</p>
+        <img src="./img/vava_2.jpeg" alt="Imagem de jogo Valorant">
+    </div>
+</section>
+
+<section id="Institucional" class="text-right-img-left">
+    <div class="text-container">
+        <h1>Institucional</h1>
+        <p>Nossa empresa foi fundada por entusiastas de jogos que desejam compartilhar a paixão por esse universo. Trabalhamos em parceria com desenvolvedores para garantir que nossos jogadores tenham acesso aos melhores títulos e atualizações. Nossa missão é criar uma comunidade vibrante e acessível.</p>
+    </div>
+    <img src="./img/minecraft.jpeg" alt="Imagem de jogo Minecraft">
+</section>
+
+<section id="ÁreasdeAtuação">
+    <div class="text-container">
+        <h1>Áreas de Atuação</h1>
+        <p>Oferecemos uma ampla gama de jogos, como ação, aventura, RPG, e muito mais. Além disso, promovemos eventos e torneios, permitindo que jogadores de todo o mundo se conectem e compitam. Venha explorar as inúmeras possibilidades do nosso universo de jogos!</p>
+    </div>
+    <img src="./img/red-dead-redemption-2.jpg" alt="Imagem de jogo Red Dead Redemption 2">
+</section>
+
+<section id="Contato" class="text-right-img-left">
+    <div class="text-container">
+        <h1>Contato</h1>
+        <p>Entre em contato conosco através do nosso e-mail ou redes sociais. Estamos prontos para assisti-lo em qualquer questão relacionada à nossa plataforma. Sua opinião é fundamental para nós, pois buscamos sempre melhorar nossos serviços.</p>
+        <p>Email: <a href="mailto:contato@gamezone.com">contato@gamezone.com</a></p>
+        <p>Telefone: (99) 11234-5678</p>
+    </div>
+    <img src="./IMG/GTA.jpeg" alt="Imagem de contato">
+</section>
+
+<section id="TrabalheConosco">
+    <div class="text-container">
+        <h1>Trabalhe Conosco</h1>
+        <p>Se você é apaixonado por jogos e quer fazer parte da nossa equipe, adoraríamos ouvir de você! Estamos sempre em busca de talentos criativos e motivados para contribuir com nossa missão. Junte-se a nós e faça a diferença no mundo dos jogos.</p>
+    </div>
+    <img src="./img/fall_guys.jpeg" alt="Imagem Trabalhe Conosco">
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p>© 2024 GameZone. Todos os direitos reservados.</p>
+    <p><a href="#Contato">Contato</a> | <a href="#TrabalheConosco">Trabalhe Conosco</a></p>
+</footer>
+
+<!-- Font Awesome para ícones sociais -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
