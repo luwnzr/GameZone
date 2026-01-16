@@ -10,7 +10,7 @@
 
 O objetivo do projeto foi criar uma interface imersiva utilizando uma paleta de cores escura (Dark Theme), tipografia moderna e layouts flexíveis que se adaptam a diferentes tamanhos de tela.
 
-## Link do projeto online do GitHub Pages: https://luwnzr.github.io/GameZone/
+# Link do projeto online do GitHub Pages: https://luwnzr.github.io/GameZone/
 
 ## 🚀 Funcionalidades e Design
 
